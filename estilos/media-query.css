@@ -21,6 +21,9 @@
     div#form p{
         font-size: 16px;
     }
+    form input[type=submit]{
+        width: 45%;
+    }
 }
 @media screen and (min-width: 992px) {
     body{
@@ -45,7 +48,6 @@
         font-size: 18px;
     }
     form input[type=submit]{
-        width: 25%;
-        margin: auto;
+        width: 35%;
     }
 }
