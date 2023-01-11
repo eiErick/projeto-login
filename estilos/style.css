@@ -58,13 +58,29 @@ div#form p{
     text-align: center;
 }
 form > div.campo{
-    background-image: linear-gradient(to right, rgb(66, 120, 174), rgb(66, 120, 174,0.0));
+    background-color: rgb(66, 120, 174);
+    border: 2px solid rgb(66, 120, 174);
     height: 40px;
     border-radius: 10px;
     margin: 10px 0px;
 }
 form label{
     display: none;
+}
+div.campo > i{
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+
+}
+div.campo > input{
+    font-size: 1em;
+    height: 100%;
+    width: calc(100% - 44px);
+    transform: translateY(-12.7px);
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
 }
 form input[type=submit] {
     display: block;
