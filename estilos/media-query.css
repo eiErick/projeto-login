@@ -44,4 +44,8 @@
     div#form p{
         font-size: 18px;
     }
+    form input[type=submit]{
+        width: 25%;
+        margin: auto;
+    }
 }
