@@ -1,0 +1,35 @@
+@charset "UTF-8";
+@media screen and (min-width: 768px) and (max-width:992px){
+    section#login{
+        width: 85vw;
+        height: 85vh;
+    }
+    section#login div#imagen{
+        float: left;
+        width: 35%;
+        height: 100%;
+        background-size: 150%;
+        background-repeat: no-repeat;
+    }
+    section#login  div#form{
+        float: right;
+        width: 65%;
+    }
+}
+@media screen and (min-width: 992px) {
+    section#login{
+        width: 85vw;
+        height: 60vh;
+    }
+    section#login div#imagen{
+        float: right;
+        width: 35%;
+        height: 100%;
+        background-size: 150%;
+        background-repeat: no-repeat;
+    }
+    section#login div#form{
+        float: left;
+        width: 65%;
+    }
+}
