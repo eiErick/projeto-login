@@ -4,109 +4,157 @@ Paletas de cores
 Verde: #49a09d
 Lilás: #5f2c82
 */
-*{
+:root {
+    --color-light-50: #f8fafc;
+
+    --color-dark-50: #797984;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000;
+
+    --color-purple-50: #7c3aed;
+    --color-purple-100: #a855f7;
+    --color-purple-200: #bf45ef;
+
+    --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100), var(--color-purple-200));
+
+    --backgorund-color-light-transparent: rgb(0, 0, 0, 0.1);
+
+    --margin-padrao: 30px;
+}
+
+* {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
-body, html{
-    background-color: rgb(0, 0, 70);
+
+body {
+    background-color: #2b2a33;
     height: 100vh;
     width: 100vw;
 }
-main{
+
+main {
     position: relative;
     height: 100vh;
     width: 100vw;
 }
-section#login{
+
+section#login {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    background-color: rgb(244, 244, 244);
-    color: rgb(0, 0, 0);
     width: 350px;
-    height: 700px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
+
+    transform: translate(-50%, -50%);
     transition: width .5s, height .5s;
     transition-timing-function: ease;
+    overflow: hidden;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    
+    color: white;
 }
-section#login > div#imagen{
+
+section#login > div#form {
     display: block;
-    background: white url(../imagens/IN\ GEN.png);
-    height: 200px;
-    background-size: cover;
-    background-position: center center;
+    padding: 30px 25px;
 }
-section#login > div#form{
-    display: block;
-    padding: 12px;
+
+div#form h1 {
+    position: relative;
+    margin-bottom: var(--margin-padrao);
+
+    font-size: 2.5em;
 }
-div#form h1{
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 2em;
+
+div#form h1::before {
+    position: absolute;
+    bottom: 0px;
+    height: 3px;
+    width: 40px;
+
+    background-color: var(--color-purple-50);
+
+    border-radius: 5px;
+
+    content: '';
 }
-div#form p{
+
+div#form p {
+    margin-bottom: var(--margin-padrao);
+
     font-size: 14px;
     text-align: center;
 }
-form > div.campo{
-    background-color: rgb(66, 120, 174);
-    border: 2px solid rgb(66, 120, 174);
-    height: 40px;
-    border-radius: 10px;
-    margin: 10px 0px;
-}
-form label{
-    display: none;
-}
-div.campo > i{
-    font-size: 2em;
-    width: 40px;
-    padding: 5px;
 
+form > div.campo {
+    margin-bottom: var(--margin-padrao);
+    height: 40px;
+
+    background: var(--backgorund-color-light-transparent);
+
+    border: 2px solid var(--backgorund-color-light-transparent);
+    border-radius: 10px;
 }
-div.campo > input{
-    font-size: 1em;
-    height: 100%;
+
+div.campo > i {
+    font-size: 2em;
+    width: 39px;
+    padding: 4.5px;
+}
+
+div.campo > input {
+    height: 90%;
     width: calc(100% - 44px);
+    padding: 15px;
+
+    font-size: 1em;
+
     transform: translateY(-12.7px);
-    border: none;
+
+    border: 1px solid var(--backgorund-color-light-transparent);
     border-radius: 8px;
-    padding: 4px;
 }
+
 form input[type=submit] {
     display: block;
-    font-size: 1em;
-    width: 60%;
-    margin: auto;
-    border-radius: 10px;
+    width: 100%;
     height: 50px;
-    background-color: rgb(0, 0, 70);
+    margin: auto;
+    margin-bottom: 10px;
+
+    font-size: 1.2em;
     color: white;
+    
+    border-radius: 10px;
     border: none;
+
+    background-image: var(--color-gradient);
+
     cursor: pointer;
 }
-form input[type=submit]:hover{
-    background-color: rgb(41, 79, 145);
-}
-form > a.button{
+
+form > a.button {
     display: block;
-    text-align: center;
-    font-size: 1em;
+    width: 130px;
+    margin: auto;
+    padding: 5px;
+
+    font-size: 14px;
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    margin-top: 15px;
+    color: white;
+
+    border-radius: 8px;
 }
-form > a.button:hover{
-    text-decoration: underline;
-    color: rgb(2, 2, 115);
+
+form > a.button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
-form > a.button > i{
+
+form > a.button > i {
    font-size: 1em; 
 }
