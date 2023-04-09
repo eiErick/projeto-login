@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+:root {
+    --color-light-50: #f8fafc;
+
+    --color-dark-50: #797984;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000;
+
+    --color-purple-50: #7c3aed;
+    --color-purple-100: #a855f7;
+    --color-purple-200: #bf45ef;
+
+    --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100), var(--color-purple-200));
+
+    --backgorund-color-dark-transparent:rgb(0, 0, 0, 0.1);
+    --backgorund-color-light-transparent:rgb(255, 255, 255, 0.1);
+
+    --color-dark: #2b2a33;
+    --color-white: #ffffff;
+
+    --margin-padrao: 30px;
+
+    --sombra: ;
+}
+
+body {
+    background-color: var(--color-white);
+}
+
+section#login {
+    background-color: var(--backgorund-color-light-transparent);
+    color: var(--color-dark-900);
+}
+
+div#form p {
+    background-color: var(--backgorund-color-dark-transparent);
+}
+
+form > div.campo {
+    background: var(--backgorund-color-dark-transparent);
+    border: 2px solid var(--backgorund-color-light-transparent);
+}
+
+div.campo > input {
+    border: 1px solid var(--backgorund-color-light-transparent);
+}
+
+form > a.button {
+    color: var(--color-dark-900);
+}
+
+form > a.button:hover {
+    background-color: var(--backgorund-color-dark-transparent);
+}
+
+#social-media img:hover {
+    background-color: var(--backgorund-color-dark-transparent);
+    border-radius: 50%;
+}
